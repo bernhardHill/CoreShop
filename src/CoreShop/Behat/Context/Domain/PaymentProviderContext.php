@@ -89,9 +89,7 @@ final class PaymentProviderContext implements Context
      */
     public function paymentShouldBePriced(OrderInterface $cart, PaymentProviderInterface $paymentProvider, int $price): void
     {
-        $address = $cart->getShippingAddress() ?: $this->addressFactory->createNew();
-
-        Assert::same($price, $this->paymentProviderPriceCalculator->getPrice($paymentProvider, $cart, $address, $this->cartContextResolver->resolveCartContext($cart)));
+        Assert::same($price, $this->paymentProviderPriceCalculator->getPrice($paymentProvider, $cart, $this->cartContextResolver->resolveCartContext($cart)));
     }
 
     /**
@@ -99,9 +97,7 @@ final class PaymentProviderContext implements Context
      */
     public function paymentProviderShouldBeValidForMyCart(PaymentProviderInterface $paymentProvider, OrderInterface $cart): void
     {
-        $address = $cart->getShippingAddress() ?: $this->addressFactory->createNew();
-
-        $ruleResult = $this->paymentRuleValidator->isPaymentProviderRuleValid($paymentProvider, $cart, $address);
+        $ruleResult = $this->paymentRuleValidator->isPaymentProviderRuleValid($paymentProvider, $cart);
 
         Assert::true(
             $ruleResult,
