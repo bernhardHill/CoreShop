@@ -3,3 +3,8 @@ imports:
     - { resource: migrations.yaml }
     - { resource: system.yml }
     - { resource: 'local/' }
+
+core_shop_order_editable:
+    flags:
+        order_editable: true
+

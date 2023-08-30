@@ -1,0 +1,4 @@
+core_shop_order_editable:
+  pimcore_admin:
+      js:
+        order_editable_detail_blocks_detail: '/bundles/coreshopordereditable/pimcore/js/ordereditable/detail/blocks/detail.js'

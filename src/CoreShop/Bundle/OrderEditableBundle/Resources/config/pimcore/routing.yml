@@ -1,0 +1,10 @@
+coreshop_admin_order_edit:
+  type: coreshop.resources
+  resource: |
+    alias: coreshop.order_editable
+    additional_routes:
+      config:
+        path: get-config
+        action: getConfig
+        methods:
+          - GET

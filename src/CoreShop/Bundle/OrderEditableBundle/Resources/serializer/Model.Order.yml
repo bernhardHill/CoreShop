@@ -249,4 +249,4 @@ CoreShop\Component\Order\Model\Order:
         immutable:
             serialized_name: immutable
             exp: object.getImmutable()
-            groups: [ Detailed ]
+            groups: [Detailed]

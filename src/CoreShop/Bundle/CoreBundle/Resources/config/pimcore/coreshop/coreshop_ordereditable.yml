@@ -1,0 +1,7 @@
+core_shop_order_editable:
+  pimcore:
+    order_editable:
+      classes:
+        admin_controller: CoreShop\Bundle\OrderEditableBundle\Controller\OrderEditableController
+         
+

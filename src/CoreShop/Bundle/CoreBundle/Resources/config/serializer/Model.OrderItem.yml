@@ -41,3 +41,7 @@ CoreShop\Component\Core\Model\OrderItem:
             exp: object.getTotalWeight()
             type: float
             groups: [Detailed]
+        immutable:
+            serialized_name: immutable
+            exp: object.getImmutable()
+            groups: [ Detailed ]

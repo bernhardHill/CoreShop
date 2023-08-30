@@ -127,6 +127,7 @@ core_shop_core:
             customer_to_company_modifier_abstract: '/bundles/coreshopcore/pimcore/js/customer/abstractCustomerModifier.js'
             customer_to_company_modifier_new: '/bundles/coreshopcore/pimcore/js/customer/customerToNewCompanyAssignment.js'
             customer_to_company_modifier_existing: '/bundles/coreshopcore/pimcore/js/customer/customerToExistingCompanyAssignment.js'
+            order_detail_blocks_detail: '/bundles/coreshopordereditable/pimcore/js/ordereditable/detail/blocks/detail.js'
             settings: '/bundles/coreshopcore/pimcore/js/settings.js'
             helpers: '/bundles/coreshopcore/pimcore/js/helpers.js'
             resource: '/bundles/coreshopcore/pimcore/js/resource.js'

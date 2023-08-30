@@ -38,7 +38,10 @@ final class CartCreationCartItemTypeExtension extends AbstractTypeExtension
     {
         $builder->addEventListener(FormEvents::PRE_SUBMIT, function (FormEvent $event) {
             $data = $event->getData();
-            $product = $data['product'];
+            $product = null;
+            if (isset($data['product'])) {
+                $product = $data['product'];
+            }
 
             if (!isset($product)) {
                 return;
